@@ -1,0 +1,106 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<title> Charity And Donations | Home </title>
+</head>
+<body id="bg">
+<center>
+<img src="banner.jpg" width="400px" height="200px">
+<h1> Charity And Donations Organization </h1>
+
+<div class="tab">
+  <button class="tablinks" onclick="openTab(event, 'tab1')">Donations</button>
+  <button class="tablinks" onclick="openTab(event, 'tab2')">Top 5 Charities in Egypt</button>
+  <button class="tablinks" onclick="openTab(event, 'tab3')">Recent Donations</button>
+  <button class="tablinks" onclick="openTab(event, 'tab4')">Contact Us</button>
+  <button class="tablinks" onclick="openTab(event, 'tab5')">How to Donate</button>
+</div>
+
+<div id="tab1" class="tabcontent">
+  <h2>Donations</h2>
+  <h3>Be like these people and donate for poor people.</h3>
+  <div class="donations">
+  <img src="Donation/1.jpg" width="300px" height="200px">
+  <img src="Donation/2.jpg" width="300px" height="200px">
+  <img src="Donation/3.jpg" width="300px" height="200px">
+  <img src="Donation/4.jpg" width="300px" height="200px">
+  <img src="Donation/5.jpg" width="300px" height="200px">
+  <img src="Donation/6.jpg" width="300px" height="200px">
+	</div>
+</div>
+
+<div id="tab2" class="tabcontent">
+  <h3>Top 5 Charities donations in Egypt</h3>
+  <h2> The Magdy Yaqoub Heart Foundation </h2>
+  <p>The famous Aswan-based medical center came top of the list. Celebrated for its advanced technology and expansive vision, the MYF aims to supply treatment for heart disease to one of the poorest regions of Egypt. <br>In 2014, the Egyptian public delved into their pockets and produced around LE517 million to support the work of the foundation. So far, between 2015-16, donations have reached LE620. </p><br>
+  <h2> Misr Al-Kheir Foundation </h2>
+  <p>The organization does work in a wide range of sectors, from education, to health, to scientific research and social services. This year Misr Al-Kheir has engaged in debt-repayment projects, helping underprivileged and vulnerable women to find sources of income and be acquitted of their debts.<br>In 2014, more than LE346 million were donated to the organization. </p><br>
+  <h2> The Egyptian Food Bank </h2>
+  <p>The EFB was set up in 2006 by a group of businessmen with a vision to put an end to malnutrition in Egypt by 2020. The charity now addresses issues of widespread hunger and food wastage through feeding programs, education and development projects.<br>They collected more than LE140 million from the people of Egypt in 2014.</p><br>
+  <h2> Orman Charity Association </h2>
+  <p>The NGO specializes in development in Egypt. Their work aims to equip individuals and communities in Egypt's most deprived areas through education, employment programs and health work.<br>Donations to Orman reached LE107 million in 2014.</p><br>
+  <h2> 57357 Children's cancer hospital foundation  </h2>
+  <p>This state-of-the-art, specialist children's hospital is one of the few of its kind in the world. Without the donations of businesses and the public, the remarkable building could not have been built in the first place, and it continues to receive huge support. Roughly LE15 million were pledged to the hospital in 2014. The hospital provides breakthrough treatment to young cancer patients from Egypt and the wider region.</p><br>
+</div>
+
+<div id="tab3" class="tabcontent">
+  <h1>Recent Donations</h1>
+  <h2>Amany Saied (50K) L.E</h2>
+  <h2>Nada Ragab (30K) L.E</h2>
+  <h2>Mariam Selim (10K) L.E</h2>
+  <h2>Donia Ashraf (50KG) clothes</h2>
+  <h2>Mariam Abdo (10KG) clothes</h2>
+</div>
+
+<div id="tab4" class="tabcontent">
+  <h1>Contact Us</h1>
+  <div class="container">
+  <form action="#">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+	
+	<label for="num">Phone Number</label>
+    <input type="text" id="num" name="num" placeholder="Your Phone Number..">
+
+    <label for="type">Donation Type</label>
+    <select id="type" name="type">
+      <option value="cash">Money (Cash)</option>
+      <option value="cloth">Clothes</option>
+      <option value="else">Another</option>
+    </select>
+    <label for="subject">Leave A Comment</label>
+    <textarea id="subject" name="subject" placeholder="Write A Message.." style="height:200px"></textarea>
+    <input type="submit" value="Submit">
+  </form>
+</div>
+</div>
+
+<div id="tab5" class="tabcontent">
+  <h1>How to Donate</h1>
+  <h3>1. Press on Contact Us TAB</h3>
+  <h3>2. Fill all the information in the form you see</h3>
+  <h3>3. Press on SUBMIT button at the end of the form</h3>
+  <h3>4. We will contact you via phone number you have eneted in form</h3>
+</div>
+
+<script>
+function openTab(evt, tab) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(tab).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+</center>
+</body>
+</html>
